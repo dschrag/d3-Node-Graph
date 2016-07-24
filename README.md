@@ -1,1 +1,1 @@
-A graph of passes done between players of Real Madrid in the 1st half of the 23.09.2014 game vs. Elche.
+Circular, node-based graph that shows the frequency of actions from node to node. Allows playthrough from state 0 to state 1.

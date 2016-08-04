@@ -10,6 +10,6 @@
       <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
     </filter>
   </defs>
-<rect x="0" y="0" fill="#333333" stroke="#FFFFFF" width="800" height="800"/>
+<rect x="0" y="0" fill="#282827" stroke="#FFFFFF" width="800" height="800"/>
 <circle fill-opacity="0" stroke="#FFFFFF" stroke-width="2" cx="400" cy="400" r="400"/>
 </svg>

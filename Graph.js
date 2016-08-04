@@ -41,7 +41,6 @@ function initializeGraph() {
 
         d3.json("ExampleData.json", function(json) {
             graph = json.GraphData;
-
             // Create link elements that will have the svg paths added later
         var link = svg.selectAll(".link")
             .data(graph.links)

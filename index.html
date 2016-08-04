@@ -60,7 +60,7 @@
 	<button id="buttonResume">Resume</button>
 	<button id="buttonStop">Stop</button>
 </div>
-<div id="KiIndex" class="hidden" style="display:none">0</div>
+<div id="NodeIndex" class="hidden" style="display:none">0</div>
 <div id="Graph"></div>
 <script>
         document.getElementById("buttonInit").onclick = function() {
@@ -70,18 +70,18 @@
 		playTransition();
 	}
 	document.getElementById("buttonNext").onclick = function() {
-		playTransitionFromIndex(parseInt(document.getElementById("KiIndex").innerText));
-		document.getElementById("KiIndex").innerText = String(parseInt(document.getElementById("KiIndex").innerText) + 1);
+		playTransitionFromIndex(parseInt(document.getElementById("NodeIndex").innerText));
+		document.getElementById("NodeIndex").innerText = String(parseInt(document.getElementById("NodeIndex").innerText) + 1);
 	}
 	document.getElementById("buttonPrevious").onclick = function() {
-		document.getElementById("KiIndex").innerText = String(parseInt(document.getElementById("KiIndex").innerText) - 1);
-		playTransitionFromIndex(parseInt(document.getElementById("KiIndex").innerText));
+		document.getElementById("NodeIndex").innerText = String(parseInt(document.getElementById("NodeIndex").innerText) - 1);
+		playTransitionFromIndex(parseInt(document.getElementById("NodeIndex").innerText));
 	}
 	document.getElementById("buttonStop").onclick = function() {
 		pauseTransitions();
 	}
 	document.getElementById("buttonResume").onclick = function() {
-		resumeTransition(parseInt(document.getElementById("KiIndex").innerText));
+		resumeTransition(parseInt(document.getElementById("NodeIndex").innerText));
 	}
 </script>
 </body>

@@ -312,7 +312,7 @@ function playTransition() {
                 if (d.time > 1) {   // Remove the path if this has happened before
                     svg.selectAll("#" + "link" + "from" + graph.nodes[d.source].Number + "to" + graph.nodes[d.target].Number + "time" + (d.time - 1)).remove();
                 }
-                document.getElementById("KiIndex").innerText = String(parseInt(document.getElementById("KiIndex").innerText) + 1);
+                document.getElementById("NodeIndex").innerText = String(parseInt(document.getElementById("NodeIndex").innerText) + 1);
                 count++;
             })
             .delay(function (d, i) {        // Set the delay of the transition so that they play one after the other
@@ -368,7 +368,7 @@ function resumeTransition(index) {
                     svg.selectAll("#" + "link" + "from" + graph.nodes[d.source].Number + "to" + graph.nodes[d.target].Number + "time" + (d.time - 1)).remove();
                 }
                 if (i >= index) {
-                    document.getElementById("KiIndex").innerText = String(parseInt(document.getElementById("KiIndex").innerText) + 1);
+                    document.getElementById("NodeIndex").innerText = String(parseInt(document.getElementById("NodeIndex").innerText) + 1);
                 }
                 count++;
             })
